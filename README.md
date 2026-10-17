@@ -21,9 +21,24 @@ Many sites list movies and shows by their file or release name, like `Dune.Part.
 
 ## Install
 
-MoviePeek isn't on the App Store, so you build it yourself with Xcode. It takes about two minutes.
+**You need:** a Mac with Safari 17 or newer.
 
-**You need:** a Mac with Safari 17 or newer, and [Xcode](https://apps.apple.com/app/xcode/id497799835) (free).
+### Option 1: Download (easiest)
+
+1. Download **`MoviePeek-1.4.dmg`** from the [latest release](https://github.com/23mystiq/MoviePeek/releases/latest), open it and drag **MoviePeek** into **Applications**.
+2. **Open MoviePeek once.** The app isn't signed by a registered Apple developer, so macOS blocks it the first time:
+   - Double-click MoviePeek in Applications and click **Done** on the warning.
+   - Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway** next to MoviePeek. Confirm with your password.
+   - *Or, in Terminal:* `xattr -dr com.apple.quarantine /Applications/MoviePeek.app`, then open it normally.
+3. **Allow unsigned extensions in Safari:** Safari → Settings → **Advanced** → tick *Show features for web developers*. Then in the new **Developer** tab, tick **Allow unsigned extensions**.
+4. **Turn it on:** Safari → Settings → **Extensions** → tick **MoviePeek**.
+5. **Enable it on a site:** open the site, click the MoviePeek toolbar button and tick **Enable on this site**. When Safari asks for permission, allow it.
+
+> **Safari forgets "Allow unsigned extensions" every time it quits.** After restarting Safari, tick it again (step 3) and MoviePeek comes back. This is how Safari treats any extension that isn't from the App Store or signed by a registered developer. If that gets annoying, build it yourself (Option 2) with an Apple Developer account and Safari keeps it enabled.
+
+### Option 2: Build it yourself
+
+This takes about two minutes and needs [Xcode](https://apps.apple.com/app/xcode/id497799835) (free).
 
 1. **Get the code**
    ```sh
@@ -41,7 +56,7 @@ To keep MoviePeek around, copy `MoviePeek.app` to your Applications folder. In X
 
 > With a free Apple ID, apps you build yourself stop launching after about 7 days. Just press ⌘R in Xcode again to rebuild.
 
-### Build from the command line
+#### Build from the command line
 
 ```sh
 cd MoviePeek

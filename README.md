@@ -4,6 +4,8 @@
 
 <p align="center">A Safari extension that shows a movie's rating, genre and plot when you hover its name.</p>
 
+<p align="center"><a href="https://buymeacoffee.com/23mystiq"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="44" alt="Buy Me a Coffee"></a></p>
+
 <p align="center"><img src="docs/screenshot.png" width="720" alt="MoviePeek showing a pop-up with the poster, rating, genres and plot for Dune: Part Two"></p>
 
 ## What it's for
@@ -88,6 +90,10 @@ To change the extension, edit the files in `extension/` and rebuild in Xcode. Th
 ## Disclaimer
 
 MoviePeek is an independent hobby project. It isn't affiliated with, endorsed by or connected to IMDb or Amazon. It uses IMDb's public but unofficial endpoints, which IMDb provides for personal, non-commercial use and may change or block at any time. Movie data and posters belong to their respective owners. MoviePeek only displays information; it doesn't download, host or link to any media.
+
+## Support
+
+If MoviePeek saves you some time, you can [buy me a coffee](https://buymeacoffee.com/23mystiq). ☕
 
 ## License
 
